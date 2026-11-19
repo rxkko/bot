@@ -1,9 +1,9 @@
 import asyncio
 from bot.handlers.schedule import router
 from aiogram import Bot, Dispatcher
-from bot.core.config import Config
+from bot.core.config import config
 
-bot = Bot(token="8229113560:AAGKtYfKdZMXILx_cU7QcIA9Bzq3nSQCLN4")
+bot = Bot(token=config.BOT_TOKEN)
 
 dp = Dispatcher()
 
